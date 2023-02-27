@@ -7,10 +7,10 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="">
+      <a class="page-header__logo" href="./index.html">
         <img src="./img/logo-mobile.svg" width="33" height="38" alt="Cat-energy">
       </a>
-      <a class="page-header__logo-title" href="">
+      <a class="page-header__logo-title" href="./index.html">
         <img src="./img/logo-title-mobile.svg" width="101" height="18" alt="Cat-energy">
       </a>
 
@@ -18,10 +18,10 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="">Главная</a>
+            <a href="./index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="">Каталог продукции</a>
+            <a href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a href="">Подбор программы</a>
@@ -32,7 +32,7 @@
 
     <main class="page-main">
       <header class="page-main__header form-header">
-        <h1 class="form-header__title">Подбор программы</h1>
+        <h1 class="form-header__title page-main__title">Подбор программы</h1>
         <p class="form-header__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </header>
 
@@ -65,20 +65,23 @@
           <legend class="visually-hidden">Цель программы</legend>
           <ul class="selection-form__list">
             <li class="selection-form__item">
-              <label class="selection-form__label">
-                <input class="selection-form__radio-item" type="radio" name="program-type" id="weight-loss">
+              <label class="selection-form__label selection-form__label--radio">
+                <input class="selection-form__radio-item visually-hidden" type="radio" name="program-type" id="weight-loss">
+                <span class="selection-form__mark selection-form__mark--radio" tabindex="0"></span>
                 Похудение
               </label>
             </li>
             <li class="selection-form__item">
-              <label class="selection-form__label">
-                <input class="selection-form__radio-item" type="radio" name="program-type" id="weight-gain">
+              <label class="selection-form__label selection-form__label--radio">
+                <input class="selection-form__radio-item visually-hidden" type="radio" name="program-type" id="weight-gain">
+                <span class="selection-form__mark selection-form__mark--radio" tabindex="0"></span>
                 Набор массы
               </label>
             </li>
             <li class="selection-form__item">
-              <label class="selection-form__label">
-                <input class="selection-form__radio-item" type="radio" name="program-type" id="advice">
+              <label class="selection-form__label selection-form__label--radio">
+                <input class="selection-form__radio-item visually-hidden" type="radio" name="program-type" id="advice">
+                <span class="selection-form__mark selection-form__mark--radio" tabindex="0"></span>
                 Не знаю (Нужен ваш совет)
               </label>
             </li>
@@ -110,36 +113,40 @@
           <legend class="selection-form__title">Дополнительно</legend>
           <ul class="selection-form__list">
             <li class="selection-form__item">
-              <label class="selection-form__label">
-                <input class="selection-form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+              <label class="selection-form__label selection-form__label--checkbox">
+                <input class="selection-form__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+                <span class="selection-form__mark selection-form__mark--checkbox" tabindex="0"></span>
                 сахарозаменитель
               </label>
             </li>
             <li class="selection-form__item">
-              <label class="selection-form__label">
-                <input class="selection-form__checkbox" type="checkbox" name="water" id="water">
+              <label class="selection-form__label selection-form__label--checkbox">
+                <input class="selection-form__checkbox visually-hidden" type="checkbox" name="water" id="water">
+                <span class="selection-form__mark selection-form__mark--checkbox" tabindex="0"></span>
                 питьевая вода
               </label>
             </li>
             <li class="selection-form__item">
-              <label class="selection-form__label">
-                <input class="selection-form__checkbox" type="checkbox" name="milk" id="milk">
+              <label class="selection-form__label selection-form__label--checkbox">
+                <input class="selection-form__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+                <span class="selection-form__mark selection-form__mark--checkbox" tabindex="0"></span>
                 молоко
               </label>
             </li>
             <li class="selection-form__item">
-              <label class="selection-form__label">
-                <input class="selection-form__checkbox" type="checkbox" name="vitamins" id="vitamins">
+              <label class="selection-form__label selection-form__label--checkbox">
+                <input class="selection-form__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+                <span class="selection-form__mark selection-form__mark--checkbox" tabindex="0"></span>
                 витамины
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="button selection-form__submit-button">отправить заявку</button>
+        <button class="button selection-form__submit-button" type="submit">отправить заявку</button>
         <p class="selection-form__footnote">* — Обязательные поля</p>
       </form>
 
-      <section class="page-main__section contacts-section">
+      <section class="page-main__section contacts-section contacts-section--grey-theme">
         <div class="contacts-section__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts-section__subtitle">Приглашаем к сотрудничеству дилеров!</p>

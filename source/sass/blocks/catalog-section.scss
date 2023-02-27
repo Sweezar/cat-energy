@@ -1,3 +1,27 @@
 .catalog-section {
   background-color: #f2f2f2;
 }
+
+.catalog-section__title {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.catalog-section__text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444
+}
+
+.catalog-section__link-button {
+  font-family: 'Oswald';
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}

@@ -1,3 +1,16 @@
 .index-header {
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../../img/index-header-background.jpg);
+  background-color: rgba(104, 183, 56, 0.85);
 }
+
+.index-header__title {
+  color: #fff;
+}
+
+.index-header__slogan {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+

@@ -1,4 +1,22 @@
 .button {
   display: block;
   background-color: #68B738;
+  font-family: 'Oswald';
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+}
+
+.button--font-size-s {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button--load-more {
+  color: #444;
+  background-color: #f2f2f2;
 }
