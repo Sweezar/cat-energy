@@ -1,0 +1,69 @@
+//  Шрифты
+@import './fonts.scss';
+
+// Блок достижений из примера
+@import './blocks/achievement.scss';
+
+// дополнительные товары со страницы каталога
+@import './blocks/additional-goods.scss';
+
+// кнопка
+@import './blocks/button.scss';
+
+// Заголовок со страницы каталога
+@import './blocks/catalog-header.scss';
+
+// Секция каталога на главной странице
+@import './blocks/catalog-section.scss';
+
+// блок с секциями каталога
+@import './blocks/catalog-sections.scss';
+
+// Блок с каталогом товаров
+@import './blocks/catalog.scss';
+
+// Блок с контактами и картой
+@import './blocks/contacts-section.scss';
+
+// Копирайт
+@import './blocks/copyright.scss';
+
+// Блок с описанием как работает продукция
+@import './blocks/descriptions.scss';
+
+// Блок с примером работы продукта
+@import './blocks/example-section.scss';
+
+// Хедер страницы с формой
+@import './blocks/form-header.scss';
+
+// Хедер главной страницы
+@import './blocks/index-header.scss';
+
+// Навигация в шапке
+@import './blocks/main-nav.scss';
+
+// Футер
+@import './blocks/page-footer.scss';
+
+// Общий хедер страниц
+@import './blocks/page-header.scss';
+
+// Основной контент страниц
+@import './blocks/page-main.scss';
+
+// обший вид страниц
+@import './blocks/page.scss';
+
+// блок с акциями в каталоге
+@import './blocks/promotion-section.scss';
+
+// Форма с подбором товаров
+@import './blocks/selection-form.scss';
+
+// блок с социальными сетями
+@import './blocks/socials-list.scss';
+
+// Стили для скрытия элементов
+@import './blocks/visually-hidden.scss';
+
