@@ -1,7 +1,7 @@
 .button {
   display: block;
-  background-color: #68B738;
-  font-family: 'Oswald';
+  background-color: $main-theme-color;
+  font-family: $font-stack;
   font-size: 16px;
   line-height: 20px;
   text-align: center;

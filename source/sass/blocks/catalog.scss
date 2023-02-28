@@ -3,7 +3,7 @@
 }
 
 .catalog__item-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-stack;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -16,14 +16,14 @@
 }
 
 .catalog__item-properties {
-  font-family: Arial, sans-serif;
+  font-family: $font-additional;
   font-size: 12px;
   line-height: 16px;
   color: #444;
 }
 
 .load-more__text {
-  font-family: Arial, sans-serif;
+  font-family: $font-additional;
   font-size: 12px;
   line-height: 16px;
   color: #444;

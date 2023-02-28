@@ -3,21 +3,21 @@
 }
 
 .example-section__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-stack;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
 
 .example-section__text {
-  font-family: Arial, sans-serif;
+  font-family: $font-additional;
   font-size: 14px;
   line-height: 18px;
   color: #444;
 }
 
 .example-section__cost {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-stack;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;

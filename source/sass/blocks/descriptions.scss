@@ -1,5 +1,5 @@
 .descriptions__title {
-  font-family: 'Oswald';
+  font-family: $font-stack;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -11,7 +11,7 @@
 }
 
 .descriptions__item {
-  font-family: Arial, sans-serif;
+  font-family: $font-additional;
   font-size: 14px;
   line-height: 18px;
   color: #444;

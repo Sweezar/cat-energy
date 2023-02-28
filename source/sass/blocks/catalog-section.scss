@@ -3,7 +3,7 @@
 }
 
 .catalog-section__title {
-  font-family: 'Oswald';
+  font-family: $font-stack;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -11,14 +11,14 @@
 }
 
 .catalog-section__text {
-  font-family: Arial, sans-serif;
+  font-family: $font-additional;
   font-size: 14px;
   line-height: 18px;
   color: #444444
 }
 
 .catalog-section__link-button {
-  font-family: 'Oswald';
+  font-family: $font-stack;
   font-size: 16px;
   line-height: 16px;
   color: #000;

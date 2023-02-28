@@ -1,5 +1,5 @@
 .contacts-section__subtitle {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-stack;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -7,7 +7,7 @@
 }
 
 .contacts-section__text {
-  font-family: 'Arial', sans-serif;
+  font-family: $font-additional;
   font-size: 14px;
   line-height: 20px;
   color: #444;
