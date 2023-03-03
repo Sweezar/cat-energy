@@ -1,0 +1,11 @@
+.page__body {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
+}

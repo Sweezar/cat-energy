@@ -1,6 +1,25 @@
-.page-main__title {
-  font-family: $font-stack;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
+.page-main {
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width : $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.page-main__header {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 27px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 82px;
+  }
 }

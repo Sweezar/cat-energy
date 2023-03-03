@@ -1,16 +1,54 @@
+.descriptions {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .descriptions__title {
   font-family: $font-stack;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .descriptions__list {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 29px;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .descriptions__item {
+  padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 151px;
+    max-width: 220px;
+  }
+}
+
+.descriptions__text {
   font-family: $font-additional;
   font-size: 14px;
   line-height: 18px;

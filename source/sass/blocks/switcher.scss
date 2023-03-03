@@ -1,3 +1,13 @@
+.switcher {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 591px;
+  }
+}
+
 .switcher__button {
   font-family: $font-stack;
   font-size: 16px;
@@ -5,4 +15,10 @@
   text-transform: uppercase;
   border: none;
   background-color: inherit;
+  padding: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -1,14 +1,14 @@
-.site-list {
-  list-style-type: none;
-  padding: 0;
-}
+.main-nav__list {
+  margin: 0;
+  text-align: center;
 
-.site-list__item a {
-  font-family: $font-stack;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
 }
