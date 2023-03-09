@@ -1,5 +1,71 @@
+.catalog {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .catalog__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 62px 80px;
+  }
+}
+
+.catalog__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 40px;
+  }
+}
+
+.catalog__item--load-more {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+
+.catalog__item-img {
+  align-self: center;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+}
+
+.catalog__item-description {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
 }
 
 .catalog__item-title {
@@ -9,10 +75,15 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #222;
-}
 
-.catalog__item-title--darken {
-  color: #111;
+  margin: 0;
+  max-width: 90px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 125px;
+    text-align: center;
+  }
 }
 
 .catalog__item-properties {
@@ -20,6 +91,46 @@
   font-size: 12px;
   line-height: 16px;
   color: #444;
+
+  overflow: hidden;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.catalog__item-properties dt {
+  margin: 0;
+	padding: 0;
+  width: 100px;
+	float: left;
+	clear: both;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 9px;
+  }
+}
+
+.catalog__item-properties dd {
+  margin: 0 0 0 100px;
+	padding: 0;
+  text-align: end;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 9px;
+  }
+}
+
+.catalog__item-button {
+  grid-column: 1 / -1;
+  margin-top: auto;
+}
+
+.load-more__title {
+  color: #111;
+  margin: 58px auto 8px;
 }
 
 .load-more__text {
@@ -27,4 +138,6 @@
   font-size: 12px;
   line-height: 16px;
   color: #444;
+  margin: 8px auto 21px;
 }
+

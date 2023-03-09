@@ -1,13 +1,66 @@
+.selection-form {
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 20px 27px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.selection-form__field-group {
+  margin: 0;
+  padding: 0;
+}
+
+.selection-form__field-group--cat-data {
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+  }
+}
+
 .selection-form__title {
   font-family: $font-stack;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .selection-form__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.selection-form__list--checkbox-list {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 32px;
+  }
 }
 
 .selection-form__label {
@@ -16,10 +69,16 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .selection-form__label--radio {
   color: #222;
+  margin-left: 46px;
 }
 
 .selection-form__input {
@@ -28,6 +87,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .selection-form__comment {
@@ -36,15 +100,38 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .selection-form__label--checkbox {
   color: #000;
+  margin-left: 46px;
+}
+
+.selection-form__submit-button {
+  display: inline-block;
+  width: 280px;
 }
 
 .selection-form__footnote {
   font-family: $font-additional;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
+  margin-top: 21px;
+  margin-bottom: 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 81px;
+  }
 }

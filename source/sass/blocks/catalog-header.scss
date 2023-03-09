@@ -1,6 +1,28 @@
+.catalog-header {
+  width: 280px;
+  margin: 0 auto;
+  padding: 27px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-top: 64px;
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .catalog-header__title {
   font-family: $font-stack;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

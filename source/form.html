@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
     <title>Подбор программы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -12,13 +13,13 @@
           <img class="logo__image" src="./img/logo-mobile.svg" width="33" height="38" alt="Cat-energy">
           <img class="logo__sign" src="./img/logo-title-mobile.svg" width="101" height="18" alt="Cat-energy">
         </a>
-        <button class="main-nav__toggle" type="button">
+        <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
 
       <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list site-list popup-open">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link"  href="./index.html">Главная</a>
           </li>
@@ -39,7 +40,7 @@
       </header>
 
       <form class="selection-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="selection-form__field-group">
+        <fieldset class="selection-form__field-group selection-form__field-group--cat-data">
           <legend class="visually-hidden">Данные кота</legend>
           <ul class="selection-form__list">
             <li class="selection-form__item">
@@ -61,11 +62,8 @@
               </label>
             </li>
           </ul>
-        </fieldset>
 
-        <fieldset class="selection-form__field-group selection-form__field-group--radio-list">
-          <legend class="visually-hidden">Цель программы</legend>
-          <ul class="selection-form__list">
+          <ul class="selection-form__list selection-form__list--program-type">
             <li class="selection-form__item">
               <label class="selection-form__label selection-form__label--radio">
                 <input class="selection-form__radio-item visually-hidden" type="radio" name="program-type" id="weight-loss">
@@ -113,7 +111,7 @@
 
         <fieldset class="selection-form__field-group">
           <legend class="selection-form__title">Дополнительно</legend>
-          <ul class="selection-form__list">
+          <ul class="selection-form__list selection-form__list--checkbox-list">
             <li class="selection-form__item">
               <label class="selection-form__label selection-form__label--checkbox">
                 <input class="selection-form__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -151,17 +149,24 @@
       <section class="page-main__section contacts-section contacts-section--grey-theme">
         <div class="contacts-section__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts-section__subtitle">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts-section__text">
-            ул. Большая<br>
-            Конюшенная, д. 19/8<br>
-            Санкт-Петербург</p>
+          <p class="contacts-section__subtitle">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+          <p class="contacts-section__adress">
+            <span class="contacts-section__adress-street">
+              ул. Большая<br>
+              Конюшенная, д. 19/8<br>
+            </span>
+            <span class="contacts-section__adress-city">
+              Санкт-Петербург
+            </span>
+          </p>
         </div>
-        <div class="contacts-section__location"></div>
+        <div class="contacts-section__location">
+          <p class="visually-hidden">Наш адрес на карте</p>
+        </div>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer__wrapper">
       <a class="page-footer__logo-title" href="">
         <img src="./img/logo-title-mobile.svg" width="101" height="18" alt="Cat-energy">
       </a>

@@ -23,7 +23,7 @@
   }
 }
 
-.site-list__item a {
+.site-list__link {
   font-family: $font-stack;
   font-weight: 500;
   font-size: 20px;
@@ -42,5 +42,11 @@
     font-size: 20px;
     line-height: 30px;
     color: #fff;
+  }
+}
+
+.site-list__link--dark {
+  @media (min-width: $desktop-width) {
+    color: #111;
   }
 }

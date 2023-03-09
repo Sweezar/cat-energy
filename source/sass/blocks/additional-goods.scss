@@ -1,8 +1,61 @@
+.additional-goods {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.additional-goods__title-wrapper {
+  padding-top: 25px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+    padding-bottom: 80px;
+  }
+}
+
+
 .additional-goods__title {
   font-family: $font-stack;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.additional-goods__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
+}
+
+.additional-goods__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 325px auto 244px;
+  }
 }
 
 .additional-goods__item-title {
@@ -11,6 +64,21 @@
   font-size: 16px;
   line-height: 16px;
   color: #222;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.additional-goods__item-description-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
 }
 
 .additional-goods__item-description {
@@ -18,4 +86,49 @@
   font-size: 14px;
   line-height: 14px;
   color: #444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
+
+.additional-goods__item-cost {
+  @media (min-width: $tablet-width) {
+    min-width: 100px;
+    text-align: end;
+  }
+}
+
+.additional-goods__button {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: span 1;
+  }
+}
+
+.additional-goods__promotion-section {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 0 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 79px;
+    padding: 0;
+  }
+}
+
+.additional-goods__inner-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+
+  }
+}
+
