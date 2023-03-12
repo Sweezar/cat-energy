@@ -4,6 +4,15 @@
 // Переменные
 @import './variables';
 
+// Общий хедер страниц
+@import './blocks/page-header.scss';
+
+// Основной контент страниц
+@import './blocks/page-main.scss';
+
+// обший вид страниц
+@import './blocks/page.scss';
+
 // Блок достижений из примера
 @import './blocks/achievement.scss';
 
@@ -48,15 +57,6 @@
 
 // Футер
 @import './blocks/page-footer.scss';
-
-// Общий хедер страниц
-@import './blocks/page-header.scss';
-
-// Основной контент страниц
-@import './blocks/page-main.scss';
-
-// обший вид страниц
-@import './blocks/page.scss';
 
 // блок с акциями в каталоге
 @import './blocks/promotion-section.scss';

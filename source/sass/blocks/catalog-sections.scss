@@ -1,16 +1,9 @@
 .catalog-sections {
-  width: 280px;
-  margin: 0 auto;
   padding-top: 0;
   display: grid;
   gap: 20px;
 
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
   @media (min-width: $desktop-width) {
-    width: 1220px;
     grid-template-columns: 570px 570px;
     gap: 80px;
   }

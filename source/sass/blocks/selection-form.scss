@@ -1,20 +1,3 @@
-.selection-form {
-  width: 280px;
-  margin: 0 auto;
-  padding: 20px 20px 27px;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    padding-left: 110px;
-    padding-right: 110px;
-  }
-}
 
 .selection-form__field-group {
   margin: 0;

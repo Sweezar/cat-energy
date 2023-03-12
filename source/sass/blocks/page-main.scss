@@ -1,4 +1,5 @@
 .page-main {
+  box-sizing: border-box;
   width: $mobile-width;
   margin: 0 auto;
 
@@ -21,5 +22,20 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 82px;
+  }
+}
+
+.page-main__section {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

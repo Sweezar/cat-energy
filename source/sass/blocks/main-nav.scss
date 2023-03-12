@@ -1,14 +1,28 @@
+
 .main-nav__list {
   margin: 0;
-  text-align: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 65px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 440px;
+    position: static;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 480px;
   }
+}
+
+.main-nav__list--closed {
+  display: none;
+}
+
+.main-nav__list--no-js {
+  position: static;
 }

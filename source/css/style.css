@@ -11,6 +11,120 @@
   font-weight: 500;
   src: url("../fonts/oswaldmedium.woff2"), url("../fonts/oswaldmedium.woff");
 }
+.page-header {
+  box-sizing: border-box;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .page-header {
+    width: 708px;
+    display: flex;
+  }
+}
+@media (min-width: 1440px) {
+  .page-header {
+    width: 1220px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 17px;
+}
+
+.page-header__logo {
+  margin-right: auto;
+}
+
+.page-header__toggle {
+  position: relative;
+  width: 24px;
+  height: 38px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+.page-header__toggle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: #000;
+  box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000;
+}
+
+.page-main {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .page-main {
+    width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-main {
+    width: 1440px;
+  }
+}
+
+.page-main__header {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 27px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .page-main__header {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 82px;
+  }
+}
+
+.page-main__section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  .page-main__section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-main__section {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.page__body {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .page__body {
+    padding-top: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .page__body {
+    padding-top: 53px;
+  }
+}
+
 .achievement {
   display: flex;
   justify-content: space-between;
@@ -47,20 +161,6 @@
   .achievement__text {
     font-size: 14px;
     line-height: 14px;
-  }
-}
-
-.additional-goods {
-  padding: 0 20px;
-}
-@media (min-width: 768px) {
-  .additional-goods {
-    padding: 0 30px;
-  }
-}
-@media (min-width: 1440px) {
-  .additional-goods {
-    padding: 0 110px;
   }
 }
 
@@ -320,37 +420,14 @@
 }
 
 .catalog-sections {
-  width: 280px;
-  margin: 0 auto;
   padding-top: 0;
   display: grid;
   gap: 20px;
 }
-@media (min-width: 768px) {
-  .catalog-sections {
-    width: 708px;
-  }
-}
 @media (min-width: 1440px) {
   .catalog-sections {
-    width: 1220px;
     grid-template-columns: 570px 570px;
     gap: 80px;
-  }
-}
-
-.catalog {
-  width: 280px;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .catalog {
-    width: 708px;
-  }
-}
-@media (min-width: 1440px) {
-  .catalog {
-    width: 1220px;
   }
 }
 
@@ -491,6 +568,10 @@
   margin: 8px auto 21px;
 }
 
+.contacts-section {
+  padding-left: 0;
+  padding-right: 0;
+}
 @media (min-width: 1440px) {
   .contacts-section {
     position: relative;
@@ -579,21 +660,6 @@
   font-size: 16px;
   line-height: 18px;
   color: #444;
-}
-
-.descriptions {
-  width: 280px;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .descriptions {
-    width: 708px;
-  }
-}
-@media (min-width: 1440px) {
-  .descriptions {
-    width: 1220px;
-  }
 }
 
 .descriptions__title {
@@ -919,19 +985,32 @@
 
 .main-nav__list {
   margin: 0;
-  text-align: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 65px;
 }
 @media (min-width: 768px) {
   .main-nav__list {
     display: flex;
     justify-content: space-between;
     width: 440px;
+    position: static;
+    margin-left: auto;
   }
 }
 @media (min-width: 1440px) {
   .main-nav__list {
     width: 480px;
   }
+}
+
+.main-nav__list--closed {
+  display: none;
+}
+
+.main-nav__list--no-js {
+  position: static;
 }
 
 .page-footer {
@@ -981,97 +1060,6 @@
   margin: 0;
 }
 
-.page-header {
-  box-sizing: border-box;
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .page-header {
-    width: 708px;
-    display: flex;
-  }
-}
-@media (min-width: 1440px) {
-  .page-header {
-    width: 1220px;
-  }
-}
-
-.page-header__wrapper {
-  display: flex;
-}
-
-.page-header__logo {
-  margin-right: auto;
-}
-
-.page-header__nav {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 58px;
-}
-@media (min-width: 768px) {
-  .page-header__nav {
-    position: static;
-    width: auto;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .page-header__toggle {
-    display: none;
-  }
-}
-
-.page-main {
-  width: 320px;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .page-main {
-    width: 768px;
-  }
-}
-@media (min-width: 1440px) {
-  .page-main {
-    width: 1440px;
-  }
-}
-
-.page-main__header {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 27px;
-  padding-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .page-main__header {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 82px;
-  }
-}
-
-.page__body {
-  margin: 0;
-}
-@media (min-width: 768px) {
-  .page__body {
-    padding-top: 24px;
-  }
-}
-@media (min-width: 1440px) {
-  .page__body {
-    padding-top: 53px;
-  }
-}
-
 .promotion-section {
   box-sizing: border-box;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../../img/promo-background.jpg);
@@ -1114,26 +1102,6 @@
 @media (min-width: 768px) {
   .promotion-section__description {
     text-align: start;
-  }
-}
-
-.selection-form {
-  width: 280px;
-  margin: 0 auto;
-  padding: 20px 20px 27px;
-}
-@media (min-width: 768px) {
-  .selection-form {
-    width: 708px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-@media (min-width: 1440px) {
-  .selection-form {
-    width: 1220px;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 }
 
@@ -1346,6 +1314,7 @@
   padding: 0;
   background-color: #fff;
   border-top: 1px solid #e6e6e6;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .site-list {
