@@ -21,6 +21,10 @@
 
 .main-nav__list--closed {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__list--no-js {

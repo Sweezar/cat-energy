@@ -7,6 +7,7 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +32,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;

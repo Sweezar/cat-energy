@@ -50,7 +50,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 120px;
+    margin-left: 160px;
+    margin-bottom: 40px;
   }
 }
 
@@ -72,7 +73,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 120px;
+    margin-left: 160px;
   }
 }
 
@@ -81,12 +82,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
-    width: 244px;
+    width: max-content;
     margin-left: 87px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 120px;
+    margin-left: 160px;
   }
 }
 

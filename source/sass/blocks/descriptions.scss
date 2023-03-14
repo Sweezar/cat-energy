@@ -1,4 +1,20 @@
 
+.descriptions {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 77px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding-bottom: 30px;
+  }
+}
+
 .descriptions__title {
   font-family: $font-stack;
   font-weight: 400;
@@ -6,18 +22,25 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
 }
 
 .descriptions__list {
   list-style-type: none;
+  margin: 0;
   padding: 0;
-  margin-bottom: 29px;
-  display: grid;
-  gap: 20px;
+
 
   @media (min-width: $tablet-width) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 37px;
+    row-gap: 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,12 +50,83 @@
 }
 
 .descriptions__item {
-  padding-left: 80px;
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    flex-direction: column;
     padding-left: 0;
-    padding-top: 151px;
+    padding-top: 40px;
     max-width: 220px;
+    margin-bottom: 40px;
+  }
+}
+
+.descriptions__icon {
+  width: 60px;
+  height: 60px;
+  background-color: $main-theme-color;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      font-family: $font-stack;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 113px;
+    }
+  }
+}
+
+.descriptions__icon--leaf {
+  background-image: url('../../img/descriptions-leaf.svg');
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: '1';
+    }
+  }
+}
+.descriptions__icon--tub {
+  background-image: url('../../img/descriptions-tub.svg');
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: '2';
+    }
+  }
+}
+
+.descriptions__icon--eat {
+  background-image: url('../../img/descriptions-eat.svg');
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: '3';
+    }
+  }
+}
+
+.descriptions__icon--alarm {
+  background-image: url('../../img/descriptions-alarm.svg');
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: '4';
+    }
   }
 }
 
@@ -41,4 +135,6 @@
   font-size: 14px;
   line-height: 18px;
   color: #444;
+  margin: 0;
+  max-width: 200px;
 }

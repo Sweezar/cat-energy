@@ -9,15 +9,29 @@
   text-decoration: none;
   color: #fff;
   border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color: #fff, $alpha: 0.3)
+  }
 }
 
 .button--font-size-s {
   font-size: 14px;
   line-height: 18px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   @media (min-width:$tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }
 
