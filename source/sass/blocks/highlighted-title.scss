@@ -1,0 +1,33 @@
+
+.highlighted-title {
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid $main-theme-color;
+    margin-top: .6em;
+    margin-left: 5%;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 3%;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: '';
+      position: absolute;
+      width: 100%;
+      border-top: 2px solid $main-theme-color;
+      margin-top: .6em;
+      margin-left: -105%;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -103%;
+    }
+  }
+}
+

@@ -1,3 +1,8 @@
+.additional-goods {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 86px;
+  }
+}
 
 .additional-goods__title-wrapper {
   padding-top: 25px;
@@ -20,6 +25,11 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -27,23 +37,37 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-
-  @media (min-width: $desktop-width) {
-    flex-grow: 1;
-  }
 }
 
 .additional-goods__item {
   padding-top: 13px;
   padding-bottom: 19px;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    padding-top: 26px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 28px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 325px auto 244px;
+    border-left: none;
+    border-right: none;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -68,6 +92,10 @@
   @media (min-width: $tablet-width) {
     justify-content: end;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
 }
 
 .additional-goods__item-description {
@@ -79,6 +107,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
+  }
+}
+
+.additional-goods__item-size {
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    margin-right: 14px;
   }
 }
 
@@ -87,15 +123,23 @@
     min-width: 100px;
     text-align: end;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    min-width: 82px;
+  }
 }
 
 .additional-goods__button {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     grid-column: span 2;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: span 1;
+    padding: 0;
   }
 }
 
@@ -117,7 +161,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
   }
 }
 
