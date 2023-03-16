@@ -1,33 +1,27 @@
 
 .highlighted-title {
-  display: inline-block;
-
-  &::after {
-    content: '';
-    position: absolute;
+    overflow: hidden;
     width: 100%;
-    border-top: 2px solid $main-theme-color;
-    margin-top: .6em;
-    margin-left: 5%;
-
-    @media (min-width: $desktop-width) {
-      margin-left: 3%;
-    }
-  }
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: '';
-      position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+  &:before,
+  &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
       width: 100%;
-      border-top: 2px solid $main-theme-color;
-      margin-top: .6em;
-      margin-left: -105%;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-left: -103%;
-    }
+      height: 2px;
+      background-color: $main-theme-color;
+      position: relative;
+  }
+  &:before {
+      margin-left: -100%;
+      left: -14px;
+  }
+  &:after {
+      margin-right: -100%;
+      right: -14px;
   }
 }
+
 

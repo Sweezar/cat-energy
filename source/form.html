@@ -42,7 +42,7 @@
       <form class="page-main__section selection-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="selection-form__field-group selection-form__field-group--cat-data">
           <legend class="visually-hidden">Данные кота</legend>
-          <ul class="selection-form__list">
+          <ul class="selection-form__list selection-form__list--cat-data">
             <li class="selection-form__item">
               <label class="selection-form__label">
                 ИМЯ:*
@@ -64,23 +64,23 @@
           </ul>
 
           <ul class="selection-form__list selection-form__list--program-type">
-            <li class="selection-form__item">
+            <li class="selection-form__item selection-form__item--radio">
               <label class="selection-form__label selection-form__label--radio">
-                <input class="selection-form__radio-item visually-hidden" type="radio" name="program-type" id="weight-loss">
+                <input class="selection-form__radio visually-hidden" type="radio" name="program-type" id="weight-loss" checked>
                 <span class="selection-form__mark selection-form__mark--radio" tabindex="0"></span>
                 Похудение
               </label>
             </li>
-            <li class="selection-form__item">
+            <li class="selection-form__item selection-form__item--radio">
               <label class="selection-form__label selection-form__label--radio">
-                <input class="selection-form__radio-item visually-hidden" type="radio" name="program-type" id="weight-gain">
+                <input class="selection-form__radio visually-hidden" type="radio" name="program-type" id="weight-gain">
                 <span class="selection-form__mark selection-form__mark--radio" tabindex="0"></span>
                 Набор массы
               </label>
             </li>
-            <li class="selection-form__item">
+            <li class="selection-form__item selection-form__item--radio">
               <label class="selection-form__label selection-form__label--radio">
-                <input class="selection-form__radio-item visually-hidden" type="radio" name="program-type" id="advice">
+                <input class="selection-form__radio visually-hidden" type="radio" name="program-type" id="advice">
                 <span class="selection-form__mark selection-form__mark--radio" tabindex="0"></span>
                 Не знаю (Нужен ваш совет)
               </label>
@@ -89,51 +89,53 @@
         </fieldset>
 
         <fieldset class="selection-form__field-group">
-          <legend class="selection-form__title">Контактные данные (владельца кота)</legend>
-          <ul class="selection-form__list">
+          <legend class="selection-form__title highlighted-title">Контактные данные (владельца кота)</legend>
+          <ul class="selection-form__list selection-form__list--contacts-data">
             <li class="selection-form__item">
-              <label class="selection-form__label">
+              <label class="selection-form__label selection-form__label--email">
                 E-mail:*
-                <input class="selection-form__input" type="email" name="email" value="kuklachev@gmail.com" required>
+                <input class="selection-form__input selection-form__input--email" type="email" name="email" value="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="selection-form__item">
-              <label class="selection-form__label">
+              <label class="selection-form__label selection-form__label--tel">
                 Телефон:*
-                <input class="selection-form__input" type="tel" name="tel" value="8 (960) 900-60-90" required>
+                <input class="selection-form__input selection-form__input--tel" type="tel" name="tel" value="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <h2 class="selection-form__title">Комментарий</h2>
-        <textarea class="selection-form__comment" name="comment" id="comment">Расскажите обо всех повадках кота</textarea>
+        <fieldset class="selection-form__field-group">
+          <legend class="selection-form__title highlighted-title">Комментарий</legend>
+          <textarea class="selection-form__comment" name="comment" id="comment">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
 
         <fieldset class="selection-form__field-group">
-          <legend class="selection-form__title">Дополнительно</legend>
+          <legend class="selection-form__title selection-form__title--add highlighted-title">Дополнительно</legend>
           <ul class="selection-form__list selection-form__list--checkbox-list">
-            <li class="selection-form__item">
+            <li class="selection-form__item selection-form__item--checkbox">
               <label class="selection-form__label selection-form__label--checkbox">
                 <input class="selection-form__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
                 <span class="selection-form__mark selection-form__mark--checkbox" tabindex="0"></span>
                 сахарозаменитель
               </label>
             </li>
-            <li class="selection-form__item">
+            <li class="selection-form__item selection-form__item--checkbox">
               <label class="selection-form__label selection-form__label--checkbox">
                 <input class="selection-form__checkbox visually-hidden" type="checkbox" name="water" id="water">
                 <span class="selection-form__mark selection-form__mark--checkbox" tabindex="0"></span>
                 питьевая вода
               </label>
             </li>
-            <li class="selection-form__item">
+            <li class="selection-form__item selection-form__item--checkbox">
               <label class="selection-form__label selection-form__label--checkbox">
                 <input class="selection-form__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
                 <span class="selection-form__mark selection-form__mark--checkbox" tabindex="0"></span>
                 молоко
               </label>
             </li>
-            <li class="selection-form__item">
+            <li class="selection-form__item selection-form__item--checkbox">
               <label class="selection-form__label selection-form__label--checkbox">
                 <input class="selection-form__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
                 <span class="selection-form__mark selection-form__mark--checkbox" tabindex="0"></span>
