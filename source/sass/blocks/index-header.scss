@@ -1,5 +1,5 @@
 .index-header {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 302px, #fff 302px), url(../../img/index-header-background-mobile.jpg);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0, rgba(104, 183, 56, 0.85) 302px, #fff 302px), url(../img/index-header-background-mobile.jpg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
     top: -220px;
     right: 0;
     z-index: -2;
-    background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../../img/index-header-background-desktop.jpg);
+    background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/index-header-background-desktop.jpg);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -92,12 +92,12 @@
 }
 
 .index-header__img {
-  background: url(../../img/head-img-mobile.png) no-repeat;
+  background: url(../img/head-img-mobile.png) no-repeat;
   width: 280px;
   height: 270px;
 
   @media (min-width: $tablet-width) {
-    background: url(../../img/head-img-tablet.png) no-repeat;
+    background: url(../img/head-img-tablet.png) no-repeat;
     background-size: contain;
     width: 709px;
     height: 609px;

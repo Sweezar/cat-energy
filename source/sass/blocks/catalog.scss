@@ -56,7 +56,7 @@
   $index: $images-count;
   @while $index > 0 {
     &--#{$index} {
-      background-image: url('../../img/catalog-images/catalog-#{$index}.png');
+      background-image: url(../img/catalog-images/catalog-#{$index}.png);
       $index: $index - 1;
     }
   }
@@ -69,7 +69,7 @@
     $index: $images-count;
     @while $index > 0 {
       &--#{$index} {
-        background-image: url('../../img/catalog-images/catalog-#{$index}-desktop.png');
+        background-image: url(../img/catalog-images/catalog-#{$index}-desktop.png);
         $index: $index - 1;
       }
     }

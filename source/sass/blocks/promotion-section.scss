@@ -1,6 +1,6 @@
 .promotion-section {
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../../img/promo-background.jpg);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/promo-background.jpg);
   background-color: rgba(104, 183, 56, 0.85);
   background-repeat: no-repeat;
   color: #fff;
@@ -14,7 +14,7 @@
 
   &::after {
     content: '';
-    background-image: url(../../img/gift-icon.svg);
+    background-image: url(../img/gift-icon.svg);
     width: 78px;
     height: 80px;
     position: absolute;

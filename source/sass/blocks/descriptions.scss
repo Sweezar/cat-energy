@@ -92,7 +92,7 @@
 }
 
 .descriptions__icon--leaf {
-  background-image: url('../../img/descriptions-leaf.svg');
+  background-image: url(../img/descriptions-leaf.svg);
 
   &::after {
     @media (min-width: $tablet-width) {
@@ -101,7 +101,7 @@
   }
 }
 .descriptions__icon--tub {
-  background-image: url('../../img/descriptions-tub.svg');
+  background-image: url(../img/descriptions-tub.svg);
 
   &::after {
     @media (min-width: $tablet-width) {
@@ -111,7 +111,7 @@
 }
 
 .descriptions__icon--eat {
-  background-image: url('../../img/descriptions-eat.svg');
+  background-image: url(../img/descriptions-eat.svg);
 
   &::after {
     @media (min-width: $tablet-width) {
@@ -121,7 +121,7 @@
 }
 
 .descriptions__icon--alarm {
-  background-image: url('../../img/descriptions-alarm.svg');
+  background-image: url(../img/descriptions-alarm.svg);
 
   &::after {
     @media (min-width: $tablet-width) {
