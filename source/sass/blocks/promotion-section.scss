@@ -12,6 +12,10 @@
 
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/promo-background@2x.jpg);
+  }
+
   &::after {
     content: '';
     background-image: url(../img/gift-icon.svg);
@@ -40,8 +44,12 @@
     width: 708px;
     height: 200px;
     padding: 71px 124px 69px 422px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/promo-background-tablet.jpg);
     background-size: cover;
-    background-position: 60% 60%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/promo-background-tablet@2x.jpg);
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -51,9 +59,13 @@
     padding-left: 41px;
     padding-right: 41px;
     padding-bottom: 0;
+
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/promo-background-desktop.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/promo-background-desktop@2x.jpg);
+    }
   }
-
-
 }
 
 .promotion-section__description {
