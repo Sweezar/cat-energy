@@ -23,6 +23,7 @@
     top: 95px;
     left: 110px;
     background-color: #fff;
+    z-index: 1;
   }
 }
 
@@ -60,12 +61,10 @@
 }
 
 .contacts-section__location {
-  background-image: url(../img/location.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: $mobile-width;
   height: 362px;
+  vertical-align: bottom;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -74,6 +73,26 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    background-image: url(../img/location-desktop.jpg);
+  }
+}
+
+.contacts-section__pin {
+  display: block;
+  width: 57px;
+  height: 53px;
+  position: absolute;
+  top: 139px;
+  left: 134px;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 106px;
+    top: 146px;
+    left: 333px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 131px;
+    left: 908px;
   }
 }

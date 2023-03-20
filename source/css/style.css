@@ -21,7 +21,6 @@
   .page-header {
     width: 708px;
     display: flex;
-    justify-content: space-between;
   }
 }
 @media (min-width: 1440px) {
@@ -64,6 +63,11 @@
   height: 1.5px;
   background-color: #000;
   box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000;
+}
+
+.page-header__nav {
+  margin-left: auto;
+  max-width: 610px;
 }
 
 .page-main {
@@ -940,6 +944,7 @@
     top: 95px;
     left: 110px;
     background-color: #fff;
+    z-index: 1;
   }
 }
 
@@ -979,12 +984,10 @@
 }
 
 .contacts-section__location {
-  background-image: url(../img/location.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: 320px;
   height: 362px;
+  vertical-align: bottom;
+  position: relative;
 }
 @media (min-width: 768px) {
   .contacts-section__location {
@@ -995,7 +998,29 @@
 @media (min-width: 1440px) {
   .contacts-section__location {
     width: 1440px;
-    background-image: url(../img/location-desktop.jpg);
+  }
+}
+
+.contacts-section__pin {
+  display: block;
+  width: 57px;
+  height: 53px;
+  position: absolute;
+  top: 139px;
+  left: 134px;
+}
+@media (min-width: 768px) {
+  .contacts-section__pin {
+    width: 113px;
+    height: 106px;
+    top: 146px;
+    left: 333px;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts-section__pin {
+    top: 131px;
+    left: 908px;
   }
 }
 
@@ -1493,13 +1518,11 @@
 }
 
 .index-header__img {
-  background: url(../img/head-img-mobile.png) no-repeat;
   width: 280px;
   height: 270px;
 }
 @media (min-width: 768px) {
   .index-header__img {
-    background: url(../img/head-img-tablet.png) no-repeat;
     background-size: contain;
     width: 709px;
     height: 609px;
@@ -1512,7 +1535,6 @@
   .index-header__img {
     width: 552px;
     height: 500px;
-    background-size: contain;
     background-color: transparent;
     top: 0;
     right: 330px;
