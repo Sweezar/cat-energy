@@ -2228,7 +2228,20 @@
 }
 @media (min-width: 768px) {
   .logo__image {
-    margin-right: 12px;
+    width: 174px;
+    height: 52px;
+  }
+}
+@media (min-width: 1440px) {
+  .logo__image {
+    width: 202px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo__sign {
+    display: none;
   }
 }
 

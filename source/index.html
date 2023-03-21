@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>Cat-energy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -10,7 +14,10 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo logo" href="">
-          <img class="logo__image" src="./img/logo-mobile.svg" width="33" height="38" alt="Cat-energy">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+            <img class="logo__image" src="./img/logo-mobile.svg" width="33" height="38" alt="Cat-energy">
+          </picture>
           <img class="logo__sign" src="./img/logo-title-mobile.svg" width="101" height="18" alt="Cat-energy">
         </a>
         <button class="page-header__toggle" type="button">
