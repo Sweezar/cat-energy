@@ -4,6 +4,7 @@
     width: 100%;
     display: inline-block;
     vertical-align: middle;
+
   &:before,
   &:after {
       content: "";
@@ -14,13 +15,23 @@
       background-color: $main-theme-color;
       position: relative;
   }
+
   &:before {
-      margin-left: -100%;
-      left: -14px;
+    margin-left: -100%;
+    left: -20px;
+
+    @media (min-width: $tablet-width) {
+      left: -36px;
+    }
   }
+
   &:after {
       margin-right: -100%;
-      right: -14px;
+      right: -20px;
+
+      @media (min-width: $tablet-width) {
+        right: -36px;
+      }
   }
 }
 

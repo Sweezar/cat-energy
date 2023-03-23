@@ -4,6 +4,7 @@
   margin-left: auto;
   margin-right: auto;
 
+
   @media (min-width: $tablet-width) {
     width: 708px;
     display: flex;
@@ -17,7 +18,12 @@
 .page-header__wrapper {
   display: flex;
   padding-top: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
 }
 
 .page-header__logo {
@@ -51,5 +57,5 @@
 
 .page-header__nav {
   margin-left: auto;
-  max-width: 610px;
+  max-width: 610px;;
 }

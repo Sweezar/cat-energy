@@ -1,10 +1,12 @@
 .socials-list {
   list-style-type: none;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 130px;
   margin: 0 auto;
   padding: 0;
+
 }
 
 .socials-link {
@@ -14,21 +16,40 @@
 .socials-icon {
   fill: #666;
 
-  &:hover {
+  .socials-link:hover & {
     fill: $main-theme-color;
   }
 
-  &:active {
+  .socials-link:active & {
     opacity: 0.3;
   }
 }
 
-.socials-icon--fill-none {
+.socials-icon--vk {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.socials-icon--instagram {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.socials-icon--facebook {
   fill: none;
   stroke: #666;
 
-  &:hover {
+  .socials-link:hover & {
     fill: none;
     stroke: $main-theme-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
   }
 }

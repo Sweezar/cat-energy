@@ -1,14 +1,14 @@
 .catalog-section {
-  padding: 30px 20px 18px;
+  padding: 29px 20px 20px;
   background-color: #f2f2f2;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 62px 53px 52px;
+    padding: 77px 62px 60px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 52px 55px 52px;
+    padding: 77px 52px 60px 52px;
   }
 
   &::after {
@@ -135,6 +135,7 @@
   padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 26px;
     font-size: 16px;
     line-height: 24px;
     max-width: 340px;
@@ -143,11 +144,12 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 73px;
+    max-width: fit-content;
   }
 }
 
 .catalog-section__link-button {
-  display: block;
+  display: inline-block;
   position: relative;
   font-family: $font-stack;
   font-size: 16px;
@@ -168,16 +170,24 @@
     background-image: url(../img/catalog-sections-button-icon.svg);
     width: 24px;
     height: 12px;
-    left: 100px;
+    left: auto;
+    right: -40px;
     top: 2px;
+
+    @media (min-width: $tablet-width) {
+      top: 3px;
+      right: -50px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 29px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin-top: 8px;
   }
 }
 
