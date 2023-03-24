@@ -1,5 +1,6 @@
 .button {
   display: block;
+  box-sizing: border-box;
   background-color: $main-theme-color;
   font-family: $font-stack;
   font-size: 16px;

@@ -403,6 +403,7 @@
 
 .button {
   display: block;
+  box-sizing: border-box;
   background-color: #68B738;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -2230,9 +2231,10 @@
 }
 @media (min-width: 1440px) {
   .selection-form__submit-button {
-    width: auto;
+    width: 570px;
     margin-top: 64px;
-    padding: 16px 208px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
