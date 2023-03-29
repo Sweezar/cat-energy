@@ -4,6 +4,7 @@
   background-color: #fff;
   border-top: 1px solid #e6e6e6;
   text-align: center;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     border: none;
